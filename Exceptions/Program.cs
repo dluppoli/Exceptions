@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace Exceptions
 {
     internal class Program
-    {
+    {   
         static void Main(string[] args)
         {
+            //Ramadani Florim
             byte num1 = 30;
             byte num2 = 60;
 
