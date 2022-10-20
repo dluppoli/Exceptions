@@ -10,14 +10,21 @@ namespace Exceptions
     {
         static void Main(string[] args)
         {
-            //Marco Calmetti
-            byte num1 = 30;
-            byte num2 = 60;
+            try
+            {
+                //Marco Calmetti
+                byte num1 = 30;
+                byte num2 = 60;
 
-            int risultato = Utils.CalcolaRisultato(num1, num2);
+                int risultato = Utils.CalcolaRisultato(num1, num2);
 
-            Console.WriteLine($"Il risultato è: {risultato}");
-            Console.ReadLine();
+                Console.WriteLine($"Il risultato è: {risultato}");
+                Console.ReadLine();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
     }
 }
