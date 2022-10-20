@@ -16,12 +16,12 @@ namespace Exceptions
             }
             catch (OverflowException e)
             {
-                Console.WriteLine("Errore: " + e.ToString());
+                Console.WriteLine("Errore: " + e.Message);
                 throw e;
             }
             catch (Exception e)
             {
-                Console.WriteLine("Errore: " + e.ToString());
+                Console.WriteLine("Errore: " + e.Message);
                 throw e;
             }
         }
