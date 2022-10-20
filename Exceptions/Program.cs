@@ -14,10 +14,21 @@ namespace Exceptions
             byte num1 = 30;
             byte num2 = 60;
 
-            int risultato = Utils.CalcolaRisultato(num1, num2);
 
-            Console.WriteLine($"Il risultato è: {risultato}");
-            Console.ReadLine();
+            try
+            {
+                int risultato = Utils.CalcolaRisultato(num1, num2);
+                Console.WriteLine($"Il risultato è: {risultato}");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(" L'elaborazione non può proseguire a causa dell'errore");
+            }
+            finally
+            {
+                Console.ReadLine();
+            }    
+            
         }
     }
 }
