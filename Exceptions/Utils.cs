@@ -10,7 +10,27 @@ namespace Exceptions
     {
         internal static byte CalcolaRisultato(byte num1, byte num2)
         {
-            return Convert.ToByte(num1 * num2);
+            byte risultato = 0;
+
+            try 
+            { 
+                risultato =  Convert.ToByte(num1 * num2);
+            }
+            catch(System.OverflowException oe)
+            {
+                Console.WriteLine(oe.Message);
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return risultato;
+
+
+
         }
+
+
     }
 }
