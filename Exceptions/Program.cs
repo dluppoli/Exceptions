@@ -12,14 +12,17 @@ namespace Exceptions
         {
             //Nicolò Govi
             byte num1 = 30;
-            byte num2 = 60;
-            int risultato = 0;
-
-            
-            risultato = Utils.CalcolaRisultato(num1, num2);
+            byte num2 = 6;
             
 
-            Console.WriteLine($"Il risultato è: {risultato}");
+            
+            if(Utils.CalcolaRisultato(num1, num2) != 0)
+            {
+                Console.WriteLine(Utils.CalcolaRisultato(num1, num2));
+            }
+            
+
+            
             Console.ReadLine();
         }
     }
