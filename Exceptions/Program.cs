@@ -12,7 +12,7 @@ namespace Exceptions
         {
             //Nicolò Govi
             byte num1 = 30;
-            byte num2 = 6;
+            byte num2 = 60;
             
 
             
