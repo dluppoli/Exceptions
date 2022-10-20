@@ -27,12 +27,6 @@ namespace Exceptions
 
                 Console.WriteLine($"Il risultato è: {risultato}");
             }
-            catch (OverflowException)
-            {
-                Console.WriteLine(); 
-                Console.WriteLine("Valore troppo grande o troppo piccolo per un Unsigned Byte");
-
-            }
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
